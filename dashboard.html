@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Myflix Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="dashboard-bg">
+        <nav class="dashboard-navbar">
+            <div class="logo">MYFLIX</div>
+            <ul class="dashboard-nav">
+                <li><a href="#featured">Home</a></li>
+                <li><a href="#tv-shows">TV Shows</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#recently-added">Recently Added</a></li>
+                <li><a href="#my-list">My List</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Titles, people, genres" id="search-input">
+                    <div class="search-results" id="search-results"></div>
+                </div>
+                <div class="dashboard-user">
+                    <div class="user-icon" id="user-icon"></div>
+                    <div class="user-dropdown" id="user-dropdown">
+                        <div class="dropdown-item" id="user-initials">AB</div>
+                        <div class="dropdown-item">Account</div>
+                        <div class="dropdown-item">Help Center</div>
+                        <div class="dropdown-item" id="sign-out">Sign Out</div>
+                        <div class="dropdown-item delete-account" id="delete-account">Delete Account</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header class="featured" id="featured">
+            <div class="featured-info">
+                <h1>LOST IN SPACE</h1>
+                <div class="featured-meta">
+                    <span>2018</span> • <span>2 Seasons</span>
+                </div>
+                <p>
+                    After crash-landing on an alien planet, the Robinson family fights against all odds to survive and escape. But they're surrounded by hidden dangers.
+                </p>
+                <div class="featured-buttons">
+                    <button class="watch-btn">▶ Watch</button>
+                    <button class="info-btn">More Info</button>
+                </div>
+            </div>
+        </header>
+
+        <section class="movie-section" id="tv-shows">
+            <h2>TV Shows</h2>
+            <div class="movie-row">
+                <div class="movie-card" data-title="Stranger Things" data-genre="Sci-Fi, Horror">
+                    <img src="https://m.media-amazon.com/images/I/71niXI3lxlL._AC_SY679_.jpg" alt="Stranger Things">
+                    <span>Stranger Things</span>
+                </div>
+                <div class="movie-card" data-title="The Witcher" data-genre="Fantasy, Adventure">
+                    <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/06/the-witcher-netflix-poster.jpg" alt="The Witcher">
+                    <span>The Witcher</span>
+                </div>
+                <div class="movie-card" data-title="Dark" data-genre="Sci-Fi, Thriller">
+                    <img src="https://miro.medium.com/v2/resize:fit:455/1*Nv-ktvxL6tRaH9zZnUvR6A.jpeg" alt="Dark">
+                    <span>Dark</span>
+                </div>
+                <div class="movie-card" data-title="Ozark" data-genre="Crime, Drama">
+                    <img src="https://vignette.wikia.nocookie.net/doblaje/images/c/cb/Ozarkk.jpg/revision/latest?cb=20181116004819&path-prefix=es" alt="Ozark">
+                    <span>Ozark</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="movie-section" id="movies">
+            <h2>Movies</h2>
+            <div class="movie-row">
+                <div class="movie-card" data-title="Extraction" data-genre="Action, Thriller">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMDJiNzUwYzEtNmQ2Yy00NWE4LWEwNzctM2M0MjE0OGUxZTA3XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" alt="Extraction">
+                    <span>Extraction</span>
+                </div>
+                <div class="movie-card" data-title="Squid Game" data-genre="Thriller, Drama">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYWE3MDVkN2EtNjQ5MS00ZDQ4LTliNzYtMjc2YWMzMDEwMTA3XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg" alt="Squid Game">
+                    <span>Squid Game</span>
+                </div>
+                <div class="movie-card" data-title="Breaking Bad" data-genre="Crime, Drama">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_FMjpg_UX1000_.jpg" alt="Breaking Bad">
+                    <span>Breaking Bad</span>
+                </div>
+                <div class="movie-card" data-title="The Irishman" data-genre="Crime, Drama">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMGUyM2ZiZmUtMWY0OC00NTQ4LThkOGUtNjY2NjkzMDJiMWMwXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_.jpg" alt="The Irishman">
+                    <span>The Irishman</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="movie-section" id="recently-added">
+            <h2>Recently Added</h2>
+            <div class="movie-row">
+                <div class="movie-card" data-title="The Witcher" data-genre="Fantasy, Adventure">
+                    <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/06/the-witcher-netflix-poster.jpg" alt="The Witcher">
+                    <span>The Witcher</span>
+                </div>
+                <div class="movie-card" data-title="Dark" data-genre="Sci-Fi, Thriller">
+                    <img src="https://miro.medium.com/v2/resize:fit:455/1*Nv-ktvxL6tRaH9zZnUvR6A.jpeg" alt="Dark">
+                    <span>Dark</span>
+                </div>
+                <div class="movie-card" data-title="Ozark" data-genre="Crime, Drama">
+                    <img src="https://vignette.wikia.nocookie.net/doblaje/images/c/cb/Ozarkk.jpg/revision/latest?cb=20181116004819&path-prefix=es" alt="Ozark">
+                    <span>Ozark</span>
+                </div>
+                <div class="movie-card" data-title="Lucifer" data-genre="Fantasy, Crime">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDJjMzc4NGYtZmFmNS00YWY3LThjMzQtYzJlNGFkZGRiOWI1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg" alt="Lucifer">
+                    <span>Lucifer</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="movie-section" id="my-list">
+            <h2>My List</h2>
+            <div class="movie-row">
+                <div class="movie-card" data-title="Peaky Blinders" data-genre="Crime, Drama">
+                    <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/07/peaky-blinders-netflix-poster.jpg" alt="Peaky Blinders">
+                    <span>Peaky Blinders</span>
+                </div>
+                <div class="movie-card" data-title="The Queen's Gambit" data-genre="Drama">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.2I3F9tvLJkNrRychL-qKOAHaK9?rs=1&pid=ImgDetMain&o=7&rm=3" alt="The Queen's Gambit">
+                    <span>The Queen's Gambit</span>
+                </div>
+                <div class="movie-card" data-title="The Crown" data-genre="Drama, History">
+                    <img src="https://cdn-3.expansion.mx/dims4/default/ed21f07/2147483647/strip/true/crop/1080x1350+0+0/resize/1800x2250!/quality/90/?url=https://cdn-3.expansion.mx/b7/fc/bf0b80554ba994d6b219bafd1052/crown.jpeg" alt="The Crown">
+                    <span>The Crown</span>
+                </div>
+                <div class="movie-card" data-title="Money Heist" data-genre="Crime, Drama">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/046/103/336/large/illusion-design-money-heist-poster-min.jpg?1644314844" alt="Money Heist">
+                    <span>Money Heist</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
